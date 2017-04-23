@@ -1,12 +1,12 @@
 import React from 'react'
-import { render } 'react-dom'
+import { render } from 'react-dom'
 import '../public/normalize.css'
 import '../public/style.css'
 
 const App = React.createClass({
   render () {
     return (
-      <div className="app">
+      <div className='app'>
         <h1>SquirkFlix</h1>
       </div>
     )
