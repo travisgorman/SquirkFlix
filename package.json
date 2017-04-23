@@ -1,0 +1,70 @@
+{
+  "name": "squirkflix",
+  "version": "1.0.0",
+  "description": "a NetFlix kinda thing with React, Redux, Jest, Standard, etc",
+  "main": "index.js",
+  "author": "Travis Gorman *Credit to Brian Holt and his React v2 worshop from Frontend Masters",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint js/**/.js webpack.config.js",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "watch": "npm run build -- --watch",
+    "test": "NODE_ENV=test jest",
+    "update-test": "npm run test -- -u",
+    "cover": "npm run test -- --coverage"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "express": "^4.15.2",
+    "history": "^4.6.1",
+    "lodash": "^4.17.4",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.15.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "css-loader": "0.25.0",
+    "enzyme": "2.0.0",
+    "enzyme-to-json": "^1.3.0",
+    "eslint": "3.6.1",
+    "eslint-config-standard": "6.1.0",
+    "eslint-config-standard-jsx": "3.1.0",
+    "eslint-config-standard-react": "4.1.0",
+    "eslint-loader": "1.3.0",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-react": "6.3.0",
+    "eslint-plugin-standard": "2.0.0",
+    "jest": "15.1.1",
+    "jsdom": "9.5.0",
+    "json-loader": "0.5.4",
+    "react-addons-test-utils": "15.3.2",
+    "react-test-renderer": "15.3.2",
+    "style-loader": "0.13.1",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "1.16.2"
+  },
+  "repository": "git+https://github.com/travisgorman/squirkflix.git",
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "bugs": {
+    "url": "https://github.com/travisgorman/squirkflix/issues"
+  },
+  "homepage": "https://github.com/travisgorman/squirkflix#readme"
+}
