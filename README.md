@@ -1,3 +1,3 @@
-#SquirkFlix
+# SquirkFlix
 A NetFlix kinda thing with React, Redux, Jest, Standard, etc...
 
