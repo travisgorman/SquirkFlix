@@ -106,12 +106,94 @@ pre {
   border-radius: inherit;
 }
 
+.show-card {
+  float: left;
+  margin-right: 2%;
+  border: 2px solid #333;
+  border-radius: 4px;
+  text-align: left;
+  width: 32%;
+  height: 0;
+  padding-bottom: 19.8%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
 
+.show-card:nth-child(3n), .search > div > a:nth-child(3n) > .show-card {
+  margin-right: 0;
+}
 
+.show-card > img {
+  width: 46%;
+  float: left;
+}
 
+.show-card > div > h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
+.show-card > div > h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 13px;
+}
 
+.show-card > div > p {
+  margin: 0;
+  font-size: 13px;
+}
 
+.search > header + div {
+  margin-top: 25px;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #facafa;
+  padding: 8px 30px;
+}
+
+header > h1 {
+  font-family: Skia;
+  font-weight: normal;
+  color: #B10DC9;
+  margin: 0;
+}
+
+header > h1 > a {
+  color: #B10DC9;
+  text-decoration: none;
+}
+
+header > h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+header > h2 > a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+header > input {
+  min-width: 250px;
+  max-width: 350px;
+  width: 33%;
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
 
 
 
