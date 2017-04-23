@@ -36,7 +36,8 @@ html {
   font-weight: normal;
 }
 
-.landing > input, .landing > form > input {
+.landing > input,
+.landing > form > input {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
@@ -101,7 +102,7 @@ pre {
   padding-bottom: 70%;
   height: 0;
   overflow: inherit;
-  margin-bottom: inherit;;
+  margin-bottom: inherit;
   border: none;
   border-radius: inherit;
 }
@@ -126,6 +127,13 @@ pre {
 .show-card > img {
   width: 46%;
   float: left;
+}
+
+.show-card > div {
+  display: block;
+  float: right;
+  width: 52%;
+  overflow-y: scroll;
 }
 
 .show-card > div > h3 {
@@ -247,51 +255,3 @@ header > input {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
