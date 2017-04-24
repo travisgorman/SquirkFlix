@@ -1,5 +1,9 @@
+/*
+   Hi, this is bad CSS, you shouldn't structure your CSS this way. Structurally based CSS is a bad idea because it's inherently brittle; if you change the way your nest something you break it. I'm doing it this way because it's less typing for everyone involved to not have to type long class names
+*/
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;;
 }
 
 html {
@@ -36,8 +40,7 @@ html {
   font-weight: normal;
 }
 
-.landing > input,
-.landing > form > input {
+.landing > input, .landing > form > input {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
@@ -102,7 +105,7 @@ pre {
   padding-bottom: 70%;
   height: 0;
   overflow: inherit;
-  margin-bottom: inherit;
+  margin-bottom: inherit;;
   border: none;
   border-radius: inherit;
 }
@@ -129,7 +132,7 @@ pre {
   float: left;
 }
 
-.show-card > div {
+.show-card > div{
   display: block;
   float: right;
   width: 52%;
@@ -168,7 +171,7 @@ header {
   left: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #facafa;
+  background-color: #fafafa;
   padding: 8px 30px;
 }
 
@@ -194,15 +197,6 @@ header > h2 > a {
   text-decoration: none;
 }
 
-header > input {
-  min-width: 250px;
-  max-width: 350px;
-  width: 33%;
-  padding: 4px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-}
-
 .details > div {
   width: 100%;
   height: 0;
@@ -218,6 +212,15 @@ header > input {
   height: 100%;
 }
 
+header > input {
+  min-width: 250px;
+  max-width: 350px;
+  width: 33%;
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
 .details > section > img, .details > section > h3 {
   width: 8%;
 }
@@ -226,6 +229,19 @@ header > input {
   -webkit-animation: spin 4s infinite linear;
   -moz-animation: spin 4s infinite linear;
   animation: spin 4s infinite linear;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
 .details > section > * {
@@ -241,17 +257,4 @@ header > input {
 
 .details > header + section {
   margin-top: 25px;
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
 }
