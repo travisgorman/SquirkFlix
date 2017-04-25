@@ -21,6 +21,7 @@ const Header = React.createClass({
           value={this.props.searchTerm} type='text' placeholder='search' />
       )
       console.log('searchTerm:', this.props.searchTerm)
+      console.log('this.state:', this.state)
     } else {
       utilSpace = (
         <h2>

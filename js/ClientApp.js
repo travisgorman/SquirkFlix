@@ -16,18 +16,15 @@ const App = React.createClass({
       <BrowserRouter>
         <Provider store={store}>
           <div className='app'>
-
             <Match exactly pattern='/' component={Landing} />
-
-            <Match pattern='/search' component={Search} />
-
+            <Match pattern='/search' component={(props) =>
+              <Search shows={preload.shows} {...props} />} />
             <Match pattern='/details/:id'
               component={(props) => {
                 const shows = preload.shows.filter((show) =>
                   props.params.id === show.imdbID)
                 return <Details show={shows[0]} {...props} />
               }} />
-
           </div>
         </Provider>
       </BrowserRouter>
