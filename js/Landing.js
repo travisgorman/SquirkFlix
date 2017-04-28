@@ -13,16 +13,11 @@ const Landing = React.createClass({
     dispatchSetSearchTerm: func
   },
   handleSearchTermChange (e) {
-    // sets e.target.value to searchTerm by passing it to dispatchSetSearchTerm
-    // dispatchSetSearchTerm is a function returned by mapDispatchToProps
-    // mapDispatchToProps takes `dispatch` from redux and returns a function that takes
-    // searchTerm and dispatches setSearchTerm passing in searchTerm
     this.props.dispatchSetSearchTerm(e.target.value)
   },
   handleSearchSubmit (e) {
     e.preventDefault()
     this.context.router.transitionTo('/search')
-    // routes to '/search'
   },
   render () {
     return (
@@ -41,13 +36,12 @@ const Landing = React.createClass({
   }
 })
 
-// map state to props
 const mapStateToProps = (state) => {
   return {
     searchTerm: state.searchTerm
   }
 }
-// map dispatch to props
+
 const mapDispatchToProps = (dispatch) => {
   return {
     dispatchSetSearchTerm (searchTerm) {
@@ -55,6 +49,5 @@ const mapDispatchToProps = (dispatch) => {
     }
   }
 }
-// connect the two to the Landing component
 
 export default connect(mapStateToProps, mapDispatchToProps)(Landing)
