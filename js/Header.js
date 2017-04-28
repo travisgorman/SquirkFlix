@@ -20,8 +20,6 @@ const Header = React.createClass({
         <input onChange={this.handleSearchTermChange}
           value={this.props.searchTerm} type='text' placeholder='search' />
       )
-      console.log('searchTerm:', this.props.searchTerm)
-      console.log('this.state:', this.state)
     } else {
       utilSpace = (
         <h2>
