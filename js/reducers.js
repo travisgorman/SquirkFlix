@@ -13,8 +13,10 @@ const setSearchTerm = (state, action) => {
 
 const addOMDBData = (state, action) => {
   const newOMDBData = {}
-  Object.assign(newOMDBData, state, {omdbData: newOMDBData})
-  return newOMDBData
+  Object.assign(newOMDBData, state.omdbData, {[action.imdbID]: action.omdbData})
+  const newState = {}
+  Object.assign(newState, state, {omdbData: newOMDBData})
+  return newState
 }
 
 const rootReducer = (state = DEFAULT_STATE, action) => {
