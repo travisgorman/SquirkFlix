@@ -52,7 +52,8 @@ const Details = React.createClass({
 })
 
 const mapStateToProps = (state, ownProps) => {
-  const omdbData = state.omdbData[ownProps.show.imdbID] ? state.omdbData[ownProps.show.imdbID] : {}
+  const omdbData = state.omdbData[ownProps.show.imdbID]
+    ? state.omdbData[ownProps.show.imdbID] : {}
   return {
     omdbData
   }
