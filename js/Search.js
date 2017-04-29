@@ -37,13 +37,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-// export const Unwrapped = Search
-
 export default connect(mapStateToProps)(Search)
-
-            // .filter((show) =>  `${show.title} || ${show.description}`.toUpperCase()
-            //   .indexOf(this.props.searchTerm.toUpperCase()) >= 0
-            //   )
-            // .map((show) => {
-            //   return <ShowCard key={show.imdbID} {...show} />
-            // })
